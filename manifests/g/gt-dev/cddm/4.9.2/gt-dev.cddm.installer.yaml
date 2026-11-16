@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.9.0.schema.json
+PackageIdentifier: gt-dev.cddm
+PackageVersion: 4.9.2
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+  - RelativeFilePath: cddm.exe
+    PortableCommandAlias: cddm
+  - RelativeFilePath: cddm-mcp.exe
+    PortableCommandAlias: cddm-mcp
+  - RelativeFilePath: cddm-lsp.exe
+    PortableCommandAlias: cddm-lsp
+Installers:
+  - Architecture: x64
+    InstallerUrl: https://git.gt-web-dev.com/gt-dev/cddm/releases/download/v4.9.2/cddm-v4.9.2-x86_64-pc-windows-gnu.zip
+    InstallerSha256: 47B97E4B3289D3B5A4C3B0B7A1B9219BDF73DFC9BF7192992BC85BFDB73FC3CF
+ManifestType: installer
+ManifestVersion: 1.9.0
